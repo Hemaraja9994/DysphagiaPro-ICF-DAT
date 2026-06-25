@@ -1,0 +1,28 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head silhouette background -->
+  <path d="M60 8C34 8 14 28 14 54C14 68 19 80 28 89L28 96C28 98 30 100 32 100L88 100C90 100 92 98 92 96L92 89C101 80 106 68 106 54C106 28 86 8 60 8Z" fill="#00206C"/>
+
+  <!-- Forehead bump -->
+  <path d="M46 8C46 8 52 2 60 2C68 2 74 8 74 8" fill="#00206C" stroke="#00206C" stroke-width="1"/>
+
+  <!-- Letter D -->
+  <path d="M22 38L22 72L36 72C47 72 56 63 56 55C56 47 47 38 36 38Z" fill="none"/>
+  <path d="M26 42L26 68L35 68C44 68 52 62 52 55C52 48 44 42 35 42Z" fill="white"/>
+  <rect x="26" y="42" width="5" height="26" fill="#00206C"/>
+
+  <!-- D letter - clean version -->
+  <path d="M28 42H36C43.7 42 50 48.3 50 55C50 61.7 43.7 68 36 68H28V42Z" fill="white"/>
+  <path d="M33 47H36C40.4 47 44 50.6 44 55C44 59.4 40.4 63 36 63H33V47Z" fill="#00206C"/>
+
+  <!-- P letter -->
+  <path d="M56 42H70C75.5 42 80 46.3 80 52C80 57.7 75.5 62 70 62H62V68H56V42Z" fill="white"/>
+  <path d="M62 47V57H70C72.8 57 75 54.8 75 52C75 49.2 72.8 47 70 47H62Z" fill="#00206C"/>
+
+  <!-- Head profile right edge -->
+  <path d="M88 54C88 54 92 62 90 72C88 80 84 84 84 84" stroke="#00206C" stroke-width="3" fill="none"/>
+
+  <!-- Orange swallow pathway / swirl - signature element -->
+  <path d="M18 74Q35 66 60 74Q85 82 102 74" stroke="#FF6A00" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M22 80Q38 73 60 80Q82 87 98 80" stroke="#FF6A00" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <path d="M26 86Q40 80 60 86Q80 92 94 86" stroke="#FF9347" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource/sora/400.css";
+@import "@fontsource/sora/500.css";
+@import "@fontsource/sora/600.css";
+@import "@fontsource/sora/700.css";
+@import "@fontsource/sora/800.css";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-sans/700.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/ibm-plex-mono/600.css";
+@import "@fontsource/ibm-plex-mono/700.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ── DysphagiaPro Design Tokens ── */
+:root {
+  /* Brand */
+  --dp-blue:        #005FDE;
+  --dp-blue-deep:   #004098;
+  --dp-navy:        #00206C;
+  --dp-navy-900:    #00134A;
+  --dp-navy-950:    #000A2E;
+  --dp-blue-400:    #4F9AFF;
+  --dp-blue-200:    #A3CAFF;
+  --dp-blue-50:     #EAF2FF;
+  --dp-orange:      #FF6A00;
+  --dp-orange-400:  #FF9347;
+  --dp-orange-50:   #FFF1E6;
+
+  /* Neutrals */
+  --dp-ink:         #0B1530;
+  --dp-slate:       #334155;
+  --dp-muted:       #64748B;
+  --dp-faint:       #94A3B8;
+  --dp-line:        #E4E9F2;
+  --dp-line-soft:   #F1F4FA;
+  --dp-surface:     #FFFFFF;
+  --dp-surface-2:   #F8FAFD;
+  --dp-bg:          #F4F7FC;
+
+  /* Severity */
+  --dp-sev-0: #16A34A;
+  --dp-sev-1: #84CC16;
+  --dp-sev-2: #FFB020;
+  --dp-sev-3: #FF6A00;
+  --dp-sev-4: #DC2626;
+
+  /* Typography */
+  --dp-font-display: 'Sora', system-ui, sans-serif;
+  --dp-font-ui:      'IBM Plex Sans', system-ui, sans-serif;
+  --dp-font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Radii */
+  --dp-r-sm: 9px;
+  --dp-r:    12px;
+  --dp-r-lg: 16px;
+
+  /* Shadows */
+  --dp-shadow-card: 0 1px 2px rgba(11,21,48,.04), 0 0 0 1px rgba(11,21,48,.04);
+  --dp-shadow-pop:  0 8px 18px rgba(0,95,222,.23);
+  --dp-shadow-cta:  0 8px 18px rgba(255,106,0,.25);
+
+  /* Tailwind / shadcn token bridge */
+  --radius: 0.75rem;
+  --background: var(--dp-bg);
+  --foreground: var(--dp-ink);
+  --card: var(--dp-surface);
+  --card-foreground: var(--dp-ink);
+  --popover: var(--dp-surface);
+  --popover-foreground: var(--dp-ink);
+  --primary: var(--dp-blue);
+  --primary-foreground: #ffffff;
+  --secondary: var(--dp-blue-50);
+  --secondary-foreground: var(--dp-navy);
+  --muted: var(--dp-line-soft);
+  --muted-foreground: var(--dp-muted);
+  --accent: var(--dp-blue-50);
+  --accent-foreground: var(--dp-blue);
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: var(--dp-line);
+  --input: var(--dp-line);
+  --ring: var(--dp-blue);
+  --chart-1: var(--dp-blue);
+  --chart-2: var(--dp-orange);
+  --chart-3: var(--dp-sev-0);
+  --chart-4: var(--dp-sev-2);
+  --chart-5: var(--dp-sev-4);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--dp-font-ui);
+  --font-mono: var(--dp-font-mono);
+}
+
+* { border-color: var(--border); }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--dp-font-ui);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--dp-font-display);
+  letter-spacing: -0.3px;
+}
+
+code, .mono { font-family: var(--dp-font-mono); }
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+}
